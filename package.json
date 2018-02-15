@@ -9,6 +9,10 @@
     "router-express"
   ],
   "author": "Chanlito <chanlito@outlook.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chanlito/express-router-helper"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=8.0.0",
