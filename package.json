@@ -1,0 +1,39 @@
+{
+  "name": "express-router-helper",
+  "version": "1.0.0",
+  "description": "A simple helper for creating express router.",
+  "keywords": [
+    "express",
+    "express-router",
+    "router",
+    "router-express"
+  ],
+  "author": "Chanlito <chanlito@outlook.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "prepare": "npx tsc"
+  },
+  "devDependencies": {
+    "@types/express": "4.x.x",
+    "express": "4.x.x",
+    "typescript": "^2.7.1"
+  },
+  "peerDependencies": {
+    "express": "4.x.x"
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "useTabs": false
+  }
+}

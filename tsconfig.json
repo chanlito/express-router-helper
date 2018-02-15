@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "build",
+    "sourceMap": true,
+    "target": "es6"
+  },
+  "include": [
+    "src",
+    "typings"
+  ],
+  "exclude": [
+    "build",
+    "node_modules"
+  ]
+}
