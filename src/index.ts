@@ -1,22 +1,25 @@
 import { NextFunction, Request, Response, Router } from 'express';
 
+const PromiseRouter = require('express-promise-router');
+
 export function createRouter(config: RouterConfig): Router {
-  const r = Router();
+  const r = PromiseRouter();
   const prefix = addMissingForwardSlash(config.prefix);
   for (const route of config.routes) {
     const path = addMissingForwardSlash(route.path);
     const mds = route.middleware || [];
-    r[route.method](prefix + path, ...mds, route.handler);
+    r[route.method.toLowerCase()](prefix + path, ...mds, route.handler);
   }
   return r;
 }
 
-export enum HttpMethods {
-  GET = 'get',
-  POST = 'post',
-  PUT = 'put',
-  DELETE = 'delete'
-}
+export const HttpMethods = {
+  GET: 'get',
+  POST: 'post',
+  PUT: 'put',
+  DELETE: 'delete',
+  PATCH: 'patch'
+};
 
 export interface RouterConfig {
   prefix: string;
@@ -25,7 +28,7 @@ export interface RouterConfig {
 
 export interface RouteConfig {
   path: string;
-  method: HttpMethods;
+  method: string;
   middleware?: Middleware[];
   handler: Handler;
 }
