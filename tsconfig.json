@@ -5,6 +5,8 @@
     "moduleResolution": "node",
     "outDir": "build",
     "sourceMap": true,
+    "strict": true,
+    "noUnusedLocals": true,
     "target": "es6"
   },
   "include": [

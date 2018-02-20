@@ -25,12 +25,15 @@
   },
   "dependencies": {
     "debug": "^3.1.0",
-    "express-promise-router": "^3.0.1"
+    "express-promise-router": "^3.0.1",
+    "indicative": "^5.0.5"
   },
   "devDependencies": {
     "@types/debug": "0.0.30",
     "@types/express": "4.x.x",
     "express": "4.x.x",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.8.0",
     "typescript": "^2.7.1"
   },
   "peerDependencies": {
