@@ -49,7 +49,7 @@ export default createRouter({
 * Then use it in like the following:
 
 ```js
-// somewhere inside your app.js, server.js, index.js or whaterver.js 🤣
+// somewhere inside your app.js, server.js, index.js or whatever.js 🤣
 
 const app = express();
 
