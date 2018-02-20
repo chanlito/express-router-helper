@@ -1,5 +1,13 @@
 # Express Router Helper
 
+## Setup
+
+```sh
+npm install express-router-helper
+```
+
+## Usage
+
 ### Before 😖
 
 ```js
