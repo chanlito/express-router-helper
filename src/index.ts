@@ -103,8 +103,8 @@ function createValidationMiddleware(
 
       // return sanitized data
       if (type === 'headers') req.headers = sanitizedData;
-      else if (type === 'query') req.query = sanitizedData;
-      else req.body = sanitizedData;
+      if (type === 'query') req.query = sanitizedData;
+      if (type === 'body') req.body = sanitizedData;
       next();
     } catch (errors) {
       res.status(422).json({
