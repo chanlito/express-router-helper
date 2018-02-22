@@ -1,6 +1,6 @@
 {
   "name": "express-router-helper",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "A simple helper for creating express router.",
   "keywords": [
     "express",
